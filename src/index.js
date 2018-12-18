@@ -7,10 +7,12 @@ import Signup from './components/Signup';
 
 import {BrowserRouter,Route} from 'react-router-dom';
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from "redux";
 import rootReducer from './reducers'
 
-const store = createStore(rootReducer);
+import reduxThunk from "redux-thunk";
+const store = createStore(rootReducer, {}, applyMiddleware(reduxThunk));
+
 
 ReactDOM.render(
   <Provider store={store}>
