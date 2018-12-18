@@ -1,5 +1,5 @@
 import React from 'react'
-import FilterLink from '../../containers/FilterLink'
+import FilterLink from '../../containers/App/FilterLink'
 const Footer = () => (
   <div>
     <span>Show: </span>
