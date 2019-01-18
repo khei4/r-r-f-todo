@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/Header';
 import App from './components/App';
-import Login from './components/Login';
+import Login from './containers/Login';
 import Signup from './components/Signup';
 
 import {BrowserRouter,Route} from 'react-router-dom';
